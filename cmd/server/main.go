@@ -23,7 +23,7 @@ func main() {
 // Responsible for initialisation of DB connection, routes, etc
 func run() error {
 	// Setup database connection
-	connectionString := "postgres://postgres:9PHA%24%24%25X6atiGiu%25C@192.168.88.3/go-simple-api?sslmode=disable"
+	connectionString := "process.env.DB_CONNECTION_STRING"
 	db, err := setupDatabase(connectionString)
 
 	if err != nil {
